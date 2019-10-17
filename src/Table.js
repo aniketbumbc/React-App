@@ -37,7 +37,8 @@ class Table extends Component {
 
             const {chardata} = this.props
             return (
-                  <table border="1">
+                
+                  <table border="1" class="centerTable">
                         <TableBody chardata ={chardata} />
                         <TableHeader />
                   </table>
