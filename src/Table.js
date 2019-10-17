@@ -16,47 +16,19 @@ const TableHeader = () =>{
 }
 
 const TableBody =() =>{
-      return(
-            <tbody>
-                              <tr>
-                                    <td>John</td>
-                                    <td>Sotware Engineer</td>
-                                    <td>Mumbai</td>
-                                    <td>2015</td>
-                              </tr>
-                              <tr>
-                                    <td>Mike</td>
-                                    <td>Test Engineer</td>
-                                    <td>NewYork</td>
-                                    <td>2017</td>
-                              </tr>
-                              <tr>
-                                    <td>Dean</td>
-                                    <td>Lead</td>
-                                    <td>Mumbai</td>
-                                    <td>2005</td>
-                              </tr>
-                              <tr>
-                                    <td>Jay</td>
-                                    <td>Sotware Engineer Manager</td>
-                                    <td>Mumbai</td>
-                                    <td>2008</td>
-                              </tr>
-                              <tr>
-                                    <td>Craig</td>
-                                    <td>Sotware Devloper</td>
-                                    <td>NewYork</td>
-                                    <td>2002</td>
-                              </tr>
-                        </tbody>
+      return(            
+            <tbody/>
       )
 }
 
 class Table extends Component {
+
       render() {
+
+            const {chardata} = this.props
             return (
                   <table border="1">
-                        <TableBody />
+                        <TableBody chardata ={chardata} />
                         <TableHeader />
                   </table>
             )
