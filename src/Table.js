@@ -15,10 +15,20 @@ const TableHeader = () =>{
       )
 }
 
-const TableBody =() =>{
-      return(            
-            <tbody/>
-      )
+const TableBody = props =>{
+      const rows = props.chardata.map((row,index)=>{
+            return(
+                  <tr key ={ index}>
+                        <td>{row.name}  {index}</td>
+                        <td>{row.job}</td>
+                        <td>{row.city}</td>
+                        <td>{row.year}</td>
+                  </tr>
+            )
+      })
+      return <tbody>{rows}</tbody>
+      
+           
 }
 
 class Table extends Component {
