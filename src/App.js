@@ -35,7 +35,7 @@ class App extends Component {
             const { characters } = this.state      
             return (
                   <div className="container">
-                        <Table chardata={characters}  removeCharacter ={this.removeCharacter}/>
+                        <table chardata={characters}  removeCharacter ={this.removeCharacter}/>
                   </div>
             )
       }
