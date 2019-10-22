@@ -3,32 +3,7 @@ import Table from './Table';
 
 class App extends Component {
       state = {
-            characters: [
-                  {
-                        name: 'John',
-                        job: 'Sotware Engineer',
-                        city: 'Mumbai',
-                        year: '2015',
-                  },
-                  {
-                        name: 'Mike',
-                        job: 'Test Engineer',
-                        city: 'NewYork',
-                        year: '2017',
-                  },
-                  {
-                        name: 'Dean',
-                        job: 'Lead',
-                        city: 'Mumbai',
-                        year: '2004',
-                  },
-                  {
-                        name: 'Jay',
-                        job: 'Sotware Devloper',
-                        city: 'NewYork',
-                        year: '2008',
-                  },
-            ],
+            characters: [ ],
 
       }
       render() {
