@@ -6,7 +6,7 @@ class Form extends Component {
             this.initialState = {
                   name: '',
                   job: '',
-                  location: '',
+                  city: '',
                   year: ''
             }
 
@@ -22,8 +22,13 @@ class Form extends Component {
             })
       }
 
+      submitForm = ()=>{
+            this.props.handleSubmit(this.state)
+            this.setState(this.initialState)
+      }
+
       render() {
-            const { name, job, location, year } = this.state;
+            const { name,job,city,year } = this.state;
 
             return (
                   <form>
@@ -32,25 +37,26 @@ class Form extends Component {
                               type="text"
                               name="name"
                               value={name}
-                              onChange={this.handleChange} />
+                              onChange={this.handleChange} /> <br/>
                         <label>Job</label>
                         <input
                               type="text"
                               name="job"
                               value={job}
-                              onChange={this.handleChange} />
+                              onChange={this.handleChange} /><br/>
                         <label>Location</label>
                         <input
                               type="text"
-                              name="location"
-                              value={location}
-                              onChange={this.handleChange} />
+                              name="city"
+                              value={city}
+                              onChange={this.handleChange} /><br/>
                         <label>Year</label>
                         <input
                               type="text"
                               name="year"
                               value={year}
-                              onChange={this.handleChange} />
+                              onChange={this.handleChange} /> <br/>
+                              <input type="button" value="Submit" onClick={this.submitForm} />
                   </form>
             );
       }
