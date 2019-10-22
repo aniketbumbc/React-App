@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
 
 
 const TableHeader = () =>{
@@ -27,8 +26,8 @@ const TableBody = props =>{
                         <td>{row.city}</td>
                         <td>{row.year}</td>
                         <td>
-                              <Button onClick={()=>props.removeCharacter(index)}>Delete
-                              </Button>
+                              <button onClick={()=>props.removeCharacter(index)}>Delete
+                              </button>
                         </td>
                   </tr>
             )
@@ -44,10 +43,10 @@ class Table extends Component {
             const {removeCharacter,chardata} = this.props
             return (
                 
-                  <Table striped bordered hover class="centerTable">
+                  <table border="1">
                         <TableBody chardata ={chardata} removeCharacter ={removeCharacter} />
                         <TableHeader />
-                  </Table>
+                  </table>
             )
       }
 
