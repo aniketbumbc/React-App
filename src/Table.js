@@ -21,7 +21,7 @@ const TableBody = props =>{
       const rows = props.chardata.map((row,index)=>{
             return(
                   <tr key ={ index}>
-                        <td>{row.name}  {index}</td>
+                        <td>{row.name}</td>
                         <td>{row.job}</td>
                         <td>{row.city}</td>
                         <td>{row.year}</td>
